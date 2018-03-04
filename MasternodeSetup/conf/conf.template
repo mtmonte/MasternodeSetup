@@ -1,0 +1,14 @@
+rpcuser=$rpcuser
+rpcpassword=$rpcpassword
+listen=1
+txindex=1
+server=1
+daemon=1
+rpcallowip=127.0.0.1
+banscore=1000
+bantime=10
+logtimestamps=1
+maxconnections=256
+masternode=1
+externalip=$externalip
+masternodeprivkey=$masternodepivkey
