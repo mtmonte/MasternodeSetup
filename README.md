@@ -156,3 +156,131 @@ optional arguments:
    [Example](https://imgur.com/a/KM2VT)
 
 1. That's it!  You're done!
+
+## Sample output
+
+**Note:** This is redacted to remove sensitive details.
+
+```
+C:\Users\Administrator>cosmos-masternode-setup.exe --name DarkNode --vps <my ip> --password U(2tCkAfbf-V7)=$
+Checking wallet requirements..
+
+Checking VPS operating system release..
+
+Distributor ID: Ubuntu
+Description:    Ubuntu 16.04.4 LTS
+Release:        16.04
+Codename:       xenial
+
+Checking that daemon is not currently running on VPS..
+
+Updating tools on VPS..
+
+Hit:1 http://security.ubuntu.com/ubuntu xenial-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu xenial InRelease
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
+Hit:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
+Fetched 102 kB in 0s (177 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  linux-generic linux-headers-generic linux-image-generic
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+wget is already the newest version (1.17.1-1ubuntu1.3).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+
+Get the latest masternode release
+Latest release found: https://github.com/CMOS-Project/Cosmos/releases/download/v1.2.0/cmos-1.2.0-x86_64-linux-gnu.tar.gz
+
+Installing masternode on VPS..
+Install command:
+
+mkdir -p /home/Cosmos && wget -qO- https://github.com/CMOS-Project/Cosmos/releases/download/v1.2.0/cmos-1.2.0-x86_64-linux-gnu.tar.gz | tar xvz --strip-components=1 -C /home/Cosmos && cp /home/Cosmos/bin/* /usr/local/bin
+
+cmos-1.2.0/bin/
+cmos-1.2.0/bin/cmos-cli
+cmos-1.2.0/bin/cmosd
+cmos-1.2.0/bin/cmos-qt
+cmos-1.2.0/bin/cmos-tx
+cmos-1.2.0/bin/test_cmos
+cmos-1.2.0/bin/test_cmos-qt
+cmos-1.2.0/include/
+cmos-1.2.0/include/bitcoinconsensus.h
+cmos-1.2.0/lib/
+cmos-1.2.0/lib/libbitcoinconsensus.so
+cmos-1.2.0/lib/libbitcoinconsensus.so.0
+cmos-1.2.0/lib/libbitcoinconsensus.so.0.0.0
+
+Creating user for masternode: Cosmos, if necessary..
+
+Setup wallet configuration..
+Creating rpcuser setting..
+Creating rpcpassword setting..
+
+Starting local daemon..
+
+Wait for wallet to by synchronized..
+Progress.. 99.99992599999999%
+Progress.. 99.999752%
+Progress.. 99.999578%
+Progress.. 99.999404%
+Progress.. 99.999231%
+Progress.. 100.00089299999999%
+
+Setup masternode transaction..
+
+Collateral required: 10000.0, total unlocked balance: 10010.88477
+Send collateral to new address: {DarkNode: <CMOS ADDRESS>}
+
+Wallet is locked, please unlock your wallet..
+Please enter you wallet passphrase:
+
+Sent collateral successfully, txid: <CMOS TXID>
+
+Get masternode output..
+Masternode output:
+{'txhash': '<CMOS TXID', 'outputidx': 1}
+
+Get masternode key..
+Masternode key: <MASTERNODE KEY>
+
+Stopping daemon on VPS (if running)..
+
+Setup VPS conf file..
+Generated configuration file:
+('rpcuser=<SOME RANDOM USER>\n'
+ 'rpcpassword=vP84Qtp9tFTIVM7D0yzSJK36TLvDMn9B\n'
+ 'listen=1\n'
+ 'txindex=1\n'
+ 'server=1\n'
+ 'daemon=1\n'
+ 'rpcallowip=127.0.0.1\n'
+ 'banscore=1000\n'
+ 'bantime=10\n'
+ 'logtimestamps=1\n'
+ 'maxconnections=256\n'
+ 'masternode=1\n'
+ 'externalip=<MY IP>\n'
+ 'masternodeprivkey=<MY PRIVATE KEY>\n')
+
+Send configuration file to VPS..
+Configuration file sent successfully!
+
+Updating folder permissions for Cosmos user.
+
+Removing VPS debug file: /home/Cosmos/.Cosmos/debug.log
+
+Starting daemon on VPS..
+Cosmos server starting
+
+Setup masternode conf file..
+Start masternode..
+Masternode started successfully!
+Stopping local daemon..
+```
