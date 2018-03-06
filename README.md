@@ -8,7 +8,7 @@ The purpose of this project is to facilitate this process as much as possible an
 
 ## Applications
 
-This project was created with [Cosmos Coin](cosmoscoin.co) in mind; however, all coin specific settings are kept in configuration files that make it easy for the community to configure the application to work on other coins as well.  As many masternode projects derive from the same source, we imagine that the existing code will work in most cases and only changes to the configuration files will be required.  Please refer to this [guide](https://docs.google.com/document/d/103liXiffv1UcEeT0seBObG7ALEhEJhCLtHbU6pHc0uA/edit?usp=sharing) for more information on each of the steps taken by this utility when drawing comparisons to other coins.
+This project was created with [Cosmos Coin](https://cosmoscoin.co/) in mind; however, all coin specific settings are kept in configuration files that make it easy for the community to configure the application to work on other coins as well.  As many masternode projects derive from the same source, we imagine that the existing code will work in most cases and only changes to the configuration files will be required.  Please refer to this [guide](https://docs.google.com/document/d/103liXiffv1UcEeT0seBObG7ALEhEJhCLtHbU6pHc0uA/edit?usp=sharing) for more information on each of the steps taken by this utility when drawing comparisons to other coins.
 
 ## Features
 
@@ -62,7 +62,7 @@ The following is currently **not** performed by this utility (may be included in
 
 # Contributions
 
-This guide was developed by the [Cosmos](cosmoscoin.co) community.  The best way to support us is to spread the word about our coin and to join our community.  
+This guide was developed by the [Cosmos](https://cosmoscoin.co/) community.  The best way to support us is to spread the word about our coin and to join our community.  
 
 [Bitcointalk ANN](https://bitcointalk.org/index.php?topic=2634321.0)  
 [Discord](https://discord.gg/Kz9u4d2)  
@@ -75,7 +75,7 @@ If you still feel like you must send a donation, any amount is welcome:
 
 # Cosmos masternode setup
 
-The following section is specific to the setup of masternodes for [Cosmos Coin](cosmoscoin.co).  To setup a masternode, follow the steps below on the primary computer containing the Cosmos wallet.
+The following section is specific to the setup of masternodes for [Cosmos Coin](https://cosmoscoin.co/).  To setup a masternode, follow the steps below on the primary computer containing the Cosmos wallet.
 
 ## Virtual Private Server (VPS)
 
